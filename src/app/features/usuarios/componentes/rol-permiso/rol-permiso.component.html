@@ -1,0 +1,238 @@
+<div class="content-wrapper">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Gestión de Roles y Permisos</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Usuarios</a></li>
+            <li class="breadcrumb-item active">Roles y Permisos</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Buscar Usuario</h3>
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Ingrese el nombre de usuario o id">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Roles</h3>
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <table class="table table-striped projects">
+            <thead>
+              <tr>
+                <th>Rol</th>
+                <th>Descripción</th>
+                <th>Permisos</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Administrador</td>
+                <td>Acceso completo al sistema.</td>
+                <td>
+                  <span class="badge badge-success">Crear Usuarios</span>
+                  <span class="badge badge-success">Editar Usuarios</span>
+                  <span class="badge badge-success">Eliminar Usuarios</span>
+                  <span class="badge badge-success">Gestionar Roles</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Usuario</td>
+                <td>Acceso limitado al sistema.</td>
+                <td>
+                  <span class="badge badge-primary">Ver Perfil</span>
+                  <span class="badge badge-primary">Editar Perfil</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Empleado</td>
+                <td>Acceso a funciones específicas.</td>
+                <td>
+                  <span class="badge badge-warning">Gestionar Tareas</span>
+                  <span class="badge badge-warning">Ver Reportes</span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Permisos</h3>
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <table class="table table-striped projects">
+            <thead>
+              <tr>
+                <th>Permiso</th>
+                <th>Descripción</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Crear Usuarios</td>
+                <td>Permite crear nuevos usuarios.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Editar Usuarios</td>
+                <td>Permite editar usuarios existentes.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Eliminar Usuarios</td>
+                <td>Permite eliminar usuarios existentes.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Gestionar Roles</td>
+                <td>Permite gestionar roles y permisos.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Ver Perfil</td>
+                <td>Permite ver el perfil del usuario.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Editar Perfil</td>
+                <td>Permite editar el perfil del usuario.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Gestionar Tareas</td>
+                <td>Permite gestionar tareas.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Ver Reportes</td>
+                <td>Permite ver reportes.</td>
+                <td>
+                  <a href="#" class="btn btn-info btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Editar
+                  </a>
+                  <a href="#" class="btn btn-danger btn-sm">
+                    <i class="fas fa-trash"></i> Eliminar
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

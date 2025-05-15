@@ -1,0 +1,166 @@
+<div class="content-wrapper">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Mi Perfil</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Usuarios</a></li>
+            <li class="breadcrumb-item active">Mi Perfil</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card card-primary card-outline">
+            <div class="card-body box-profile">
+              <div class="text-center">
+                <img class="profile-user-img img-fluid img-circle" src="assets/adminlte/dist/img/avatar5.png" alt="User profile picture">
+              </div>
+              <h3 class="profile-username text-center">Nombre del Usuario</h3>
+              <p class="text-muted text-center">Rol del Usuario</p>
+              <ul class="list-group list-group-unbordered mb-3">
+                <li class="list-group-item">
+                  <b>Correo</b> <a class="float-right">usuario.com</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Teléfono</b> <a class="float-right">123-456-7890</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Ubicación</b> <a class="float-right">Ciudad, País</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Fecha de Nacimiento</b> <a class="float-right">00/00/0000</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Género</b> <a class="float-right">Masculino/Femenino/No Binario</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header p-2">
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" href="#informacion" data-toggle="tab">Información</a></li>
+                <li class="nav-item"><a class="nav-link" href="#editar" data-toggle="tab">Editar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seguridad" data-toggle="tab">Seguridad</a></li>
+                <li class="nav-item"><a class="nav-link" href="#preferencias" data-toggle="tab">Preferencias</a></li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="active tab-pane" id="informacion">
+                  <strong><i class="fas fa-book mr-1"></i> Acerca de mí</strong>
+                  <p class="text-muted">
+                    Información adicional sobre el usuario.
+                  </p>
+                  <hr>
+                  <strong><i class="fas fa-map-marker-alt mr-1"></i> Ubicación</strong>
+                  <p class="text-muted">Ciudad, País</p>
+                  <hr>
+                  <strong><i class="fas fa-pencil-alt mr-1"></i> Habilidades</strong>
+                  <p class="text-muted">
+                    <span class="tag tag-danger">Habilidad 1</span>
+                    <span class="tag tag-success">Habilidad 2</span>
+                    <span class="tag tag-info">Habilidad 3</span>
+                    <span class="tag tag-warning">Habilidad 4</span>
+                  </p>
+                </div>
+                <div class="tab-pane" id="editar">
+                  <form class="form-horizontal">
+                    <div class="form-group row">
+                      <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputEmail" class="col-sm-2 col-form-label">Correo</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Correo">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPhone" class="col-sm-2 col-form-label">Teléfono</label>
+                      <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="inputPhone" placeholder="Teléfono">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputLocation" class="col-sm-2 col-form-label">Ubicación</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputLocation" placeholder="Ubicación">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputBirthdate" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+                      <div class="col-sm-10">
+                        <input type="date" class="form-control" id="inputBirthdate">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputGender" class="col-sm-2 col-form-label">Género</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" id="inputGender">
+                          <option>Masculino</option>
+                          <option>Femenino</option>
+                          <option>Otro</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-danger">Guardar Cambios</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane" id="seguridad">
+                  <form class="form-horizontal">
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña Actual</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña Actual">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputNewPassword" class="col-sm-2 col-form-label">Nueva Contraseña</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputNewPassword" placeholder="Nueva Contraseña">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputConfirmPassword" class="col-sm-2 col-form-label">Confirmar Contraseña</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirmar Contraseña">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-danger">Cambiar Contraseña</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane" id="preferencias">
+                  <form class="form-horizontal">
+                    <div class="form-group row">
+                      <label for="inputLanguage" class="col-sm-2 col-form-label">Idioma</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" id="inputLanguage">
+                          <option>Español</option>
+                          <option>Inglés</option>
+                          <option>Francés</option>
+                        </select>
+                      </div>
+                    </div>

@@ -1,0 +1,92 @@
+<div class="content-wrapper">
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Deja aquí tu pregunta</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Soporte</a></li>
+            <li class="breadcrumb-item active">Preguntas</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Pregunta a la Compañía</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre (Opcional)</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="pregunta">Pregunta</label>
+              <textarea class="form-control" id="pregunta" rows="3" placeholder="Escribe tu pregunta aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Pregunta</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Preguntas Frecuentes (FAQ)</h3>
+        </div>
+        <div class="card-body">
+          <div id="accordion">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="card-title w-100">
+                  <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
+                    ¿Quiénes somos?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                  Somos HelpConnect, una plataforma diseñada para facilitar la comunicación y gestión de solicitudes entre usuarios y empresas, mejorando la experiencia de soporte y atención al cliente.
+                </div>
+              </div>
+            </div>
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="card-title w-100">
+                  <a class="d-block w-100" data-toggle="collapse" href="#collapseTwo">
+                    ¿Cuál es el objetivo de la compañía?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Nuestro objetivo es simplificar el proceso de soporte y atención al cliente, ofreciendo una herramienta eficiente y fácil de usar que permita una comunicación fluida y la resolución rápida de problemas.
+                </div>
+              </div>
+            </div>
+            <div class="card card-primary">
+              <div class="card-header">
+                <h4 class="card-title w-100">
+                  <a class="d-block w-100" data-toggle="collapse" href="#collapseThree">
+                    ¿Vamos a implementar IA en la app?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  Sí, estamos trabajando en integrar inteligencia artificial para mejorar la experiencia del usuario y automatizar respuestas a preguntas frecuentes, ofreciendo soluciones más rápidas y personalizadas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

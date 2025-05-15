@@ -1,0 +1,206 @@
+ <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-6">
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link">
+      <img src="assets/adminlte/dist/img/HELPC.png" alt="N" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">HelpConnect</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="assets/adminlte/dist/img/avatar5.png" class="img-circle elevation-2" alt="avatar5">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Jefferson Calderon</a>
+        </div>
+      </div>
+    
+    
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          
+          
+          <li class="nav-item">
+            
+            <a [routerLink]="['/dashboard']" class="nav-link"> <!-- etiqueta ancord-->
+              <i class="fas fa-home nav-icon"></i>
+              <p>Dashboard</p>
+            </a>
+         </li>
+         
+         <li class="nav-item">
+          <a href="" class="nav-link">
+            <i class="fa fa-book nav-icon"></i>
+            <p>Gestion de Solicitudes</p>
+            <i class="right fas fa-angle-left"></i>
+            </a>
+
+           <ul class="nav nav-treeview"> <!-- opciones -->
+             <li class="nav-item">
+              <a [routerLink]="['/gestionsoli/new-solicitud']" class="nav-link">
+                <i class="fa fa-comment nav-icon"></i>
+                <p>Nueva Solicitud</p>
+              </a>
+             </li>
+               <li class="nav-item">
+                <a [routerLink]="['/gestionsoli/my-solicitud']" class="nav-link">  <!-- etiqueta ancord-->
+                 <i class="fa fa-address-book nav-icon"></i>
+                 <p>Mis Solicitudes</p>
+               </a>
+             </li>
+           </ul> <!-- fin dela lista de despliegue -->
+           </li> 
+           <li class="nav-item"> <!-- nuevo item -->
+            <a href="" class="nav-link">
+             <i class="fa fa-share nav-icon"></i>
+             <p>Canales</p>
+             <i class="right fas fa-angle-left"></i>
+             </a>
+ 
+             <ul class="nav nav-treeview"> 
+              <li class="nav-item">
+                <a routerLink="/canales/correos" class="nav-link"> 
+                 <i class="fa fa-envelope nav-icon"></i>
+                 <p>Correos</p>
+               </a>
+               </li>
+                <li class="nav-item">
+                  <a routerLink="/canales/chat" class="nav-link"> 
+                  <i class="fa fa-laptop nav-icon"></i>
+                  <p>chat</p>
+                </a>
+              </li>
+             </ul> 
+            </li> <!-- fin dela lista de despliegue -->
+            <li class="nav-item"> <!-- nuevo item -->
+              <a href="" class="nav-link">
+               <i class="fa fa-newspaper nav-icon"></i>
+               <p>Reportes</p>
+               <i class="right fas fa-angle-left"></i>
+               </a>
+   
+               <ul class="nav nav-treeview"> 
+                <li class="nav-item">
+                  <a routerLink="/reportes/resumen" class="nav-link"> 
+                   <i class="fa fa-folder-open nav-icon"></i>
+                   <p>Resumen General</p>
+                 </a>
+                 </li>
+                  <li class="nav-item">
+                    <a routerLink="/reportes/exportar" class="nav-link"> 
+                    <i class="fa fa-reply-all nav-icon"></i>
+                    <p>Exportar Reporte</p>
+                  </a>
+                </li>
+               </ul> 
+              </li> <!-- fin dela lista de despliegue -->
+              <li class="nav-item"> <!-- nuevo item -->
+                <a href="" class="nav-link">
+                 <i class="fa fa-users nav-icon"></i>
+                 <p>Usuarios</p>
+                 <i class="right fas fa-angle-left"></i>
+                 </a>
+     
+                 <ul class="nav nav-treeview"> 
+                   <li class="nav-item">
+                    <a routerLink="/usuarios/perfil" class="nav-link"> 
+                     <i class="fa fa-male nav-icon"></i>
+                     <p>Mi Perfil</p>
+                     </a>
+                     </li>
+                     <li class="nav-item">
+                      <a routerLink="/usuarios/new" class="nav-link"> 
+                      <i class="fa fa-user-plus nav-icon"></i>
+                      <p>Nuevo Usuario</p>
+                     </a>
+                   </li> 
+                   <li class="nav-item">
+                    <a routerLink="/usuarios/list" class="nav-link"> 
+                     <i class="fa fa-user nav-icon"></i>
+                     <p>Lista de Usuarios</p>
+                    </a>
+                  </li> 
+                  <li class="nav-item">
+                    <a routerLink="/usuarios/roles-permisos" class="nav-link"> 
+                     <i class="fa fa-user-times nav-icon"></i>
+                     <p>Roles y Permisos</p>
+                    </a>
+                  </li> 
+                 </ul> 
+                </li> <!-- fin dela lista de despliegue -->
+
+                <li class="nav-item"> <!-- nuevo item -->
+                  <a href="" class="nav-link">
+                   <i class="fa fa-bell nav-icon"></i>
+                   <p>Alertas</p>
+                   <i class="right fas fa-angle-left"></i>
+                   </a>
+       
+                   <ul class="nav nav-treeview"> 
+                    <li class="nav-item">
+                      <a routerLink="/alertas/pendientes" class="nav-link"> 
+                       <i class="fa fa-hourglass-half nav-icon"></i>
+                       <p>Pendientes</p>
+                     </a>
+                     </li>
+                      <li class="nav-item">
+                        <a routerLink="/alertas/urgentes" class="nav-link"> 
+                        <i class="fa fa-exclamation-triangle nav-icon"></i>
+                        <p>Urgentes</p>
+                      </a>
+                    </li>
+                   </ul> 
+                  </li> <!-- fin dela lista de despliegue -->
+
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                     <i class="fa fa-life-ring nav-icon"></i>
+                     <p>Soporte</p>
+                     <i class="right fas fa-angle-left"></i>
+                     </a>
+         
+                    <ul class="nav nav-treeview"> <!-- opciones -->
+                      <li class="nav-item">
+                        <a routerLink="/soporte/preguntas" class="nav-link"> <!-- etiqueta ancord-->
+                         <i class="fa fa-question nav-icon"></i>
+                         <p>Preguntas Frecuentes</p>
+                       </a>
+                      </li>
+                        <li class="nav-item">
+                          <a routerLink="/soporte/contactar" class="nav-link"> <!-- etiqueta ancord-->
+                          <i class="fa fa-phone nav-icon"></i>
+                          <p>Contactar Soporte</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a routerLink="/soporte/guia" class="nav-link"> <!-- etiqueta ancord-->
+                          <i class="fa fa-bookmark nav-icon"></i>
+                          <p></p>
+                          Guías de Uso
+                        </a>
+                      </li> 
+                    </ul> <!-- fin dela lista de despliegue -->
+                    </li> 
+
+
+        
+
+
+
+        </ul>
+      </nav>
+    </div>
+  </aside>      
+    
+    
+    
+   
+    
+        
+      
+        
+      
