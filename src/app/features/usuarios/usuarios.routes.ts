@@ -5,8 +5,10 @@ import { MyPerfilComponent } from './componentes/my-perfil/my-perfil.component';
 import { RolPermisoComponent } from './componentes/rol-permiso/rol-permiso.component';
 
 export const USUARIOSS_ROUTES: Routes = [
+{ path: '', component: ListUsuarioComponent },
   { path: 'list', component: ListUsuarioComponent },
-  { path: 'new', component: NewUsuarioComponent },
-  { path: 'perfil', component: MyPerfilComponent },
+  { path: 'new/:id', component: NewUsuarioComponent },
+   { path: 'new', component: NewUsuarioComponent },
+  { path: 'perfil/:id', component: MyPerfilComponent },
   { path: 'roles-permisos', component: RolPermisoComponent }
 ];

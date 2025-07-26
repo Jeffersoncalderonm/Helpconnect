@@ -7,11 +7,21 @@ export const routes: Routes =[
        
         loadComponent: () => import('./features/dashboard/dashboard.component').then(c => c.DashboardComponent)
     },
+
+
+    {
+        path: 'login',
+       
+        loadComponent: () =>   import('./features/login/login.component').then(c => c.LoginComponent),
+    },
+
+
     {
         path: 'dashboard',
         
          loadComponent: () => import('./features/dashboard/dashboard.component').then(c => c.DashboardComponent)
     },
+
     {
         path: 'gestionsoli',
          loadChildren: () => import('./features/gestionSoli/gestionsoli.routes').then(c => c.GESTIONSOLI_ROUTES)

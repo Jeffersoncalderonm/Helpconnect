@@ -14,7 +14,8 @@ import { FooterComponent } from "./layout/footer/footer.component";
 export class AppComponent {
   title = 'HelpConnect';
   router = inject(Router);
-  shouldShowLayout() {
+  
+  showtemplate(){
     
     return this.router.url !== '/login';
   }
